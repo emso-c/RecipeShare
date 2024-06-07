@@ -139,7 +139,6 @@ class FirestoreService {
         }
     }
 
-    // MARK: - Fetch Recipes with Strategy Pattern
     
     private func fetchAllRecipes(startAfter: DocumentSnapshot?, pageSize: Int = 5, completion: @escaping (Result<([Recipe], DocumentSnapshot?), Error>) -> Void) {
         var query: Query = db.collection("recipes").order(by: "createdAt", descending: true).limit(to: pageSize)

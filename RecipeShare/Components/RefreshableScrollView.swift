@@ -1,10 +1,3 @@
-//
-//  RefreshableScrollView.swift
-//  RecipeShare
-//
-//  Created by Patron on 28.05.2024.
-//
-
 import SwiftUI
 
 struct RefreshableScrollView<Content: View>: View {
